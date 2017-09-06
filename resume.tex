@@ -5,9 +5,10 @@
 \documentclass{resume}
 
 \usepackage{bookmark}
+\usepackage{graphicx}
 \usepackage{paralist}
 \usepackage{multirow}
-\usepackage{enumitem}
+\usepackage{marvosym}
 
 % Modify document margins
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
@@ -22,14 +23,36 @@
 \addbibresource{bib/resume.bib}
 \addbibresource{bib/proceedings.bib}
 
+
+% Logo Commands
+
+\newcommand\githublogo{\raisebox{-1pt}{\includegraphics[height=9pt]{logos/github.pdf}}\ }
+\newcommand\linkedinlogo{\raisebox{-1pt}{\includegraphics[height=9pt]{logos/linkedin.pdf}}\ }
+\newcommand\emaillogo{\raisebox{-1pt}{\Letter}\ }
+\newcommand\homephonelogo{\raisebox{-1pt}{\Telefon}\ }
+\newcommand\cellphonelogo{\raisebox{-1pt}{\Mobilefone}\ }
+\newcommand*{\github}[1]{\githublogo\href{https://#1}{#1}}
+\newcommand*{\linkedin}[1]{\linkedinlogo\href{https://#1}{#1}}
+\newcommand*{\email}[1]{\emaillogo\href{mailto:#1}{\nolinkurl{#1}}}
+\newcommand*{\homephone}[1]{\homephonelogo{#1}}
+\newcommand*{\cellphone}[1]{\cellphonelogo{#1}}
+
 %-----------------------
 %   HEADER SECTION
 %-----------------------
 
-\name{Anastasios Antoniadis}
-\address{6 Paioniou Street \\ Kamatero (Athens 13451), Attica, Greece}
-\address{(Home) +30 210 2318223 \\ (Cell) +30 6970236358 \\
-  \href{mailto:a.antoniadis1989@gmail.com}{\nolinkurl{a.antoniadis1989@gmail.com}}}
+\name{Anastasios ``Tony'' Antoniadis}
+\address{Evristhenous 3, Zografou, 15773, Attica, Greece
+  \hfill{\email{anantoni@di.uoa.gr}}
+}
+
+\address{
+  \homephone{ +30 2130 434288} \hspace{0.2cm}
+  \cellphone{ +30 694 203 3025}
+  \hfill{\github{github.com/anantoni}}
+}
+
+
 
 \begin{document}
 \newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
@@ -40,19 +63,27 @@
 %------------------------------
 
 \begin{rSection}{Education}
-
-{\bf Master of Science,} Computing Systems \hfill {2014 -- } \\
+{\bf Ph.D.} in Computer Science \hfill {2016 -- (ongoing) } \\
+Field: Program Analysis \\
 Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
 Department of Informatics \& Telecommunications \\
-Current Grade: $10 / 10$.
 
-{\bf Bachelor of Science,} Computer Science \hfill {2006 -- 2014}  \\
+{\bf M.Sc.,} in Computer Science \hfill {2015 -- 2016 } \\
+Field: Computing Systems \\
+Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
+Department of Informatics \& Telecommunications \\
+Thesis: '' Combining source code metadata and static analysis results via a compiler plug-in'' \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis2.pdf}{ (link)} \\
+Advisor: Yannis Smaragdakis
+  (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}}) \\
+Grade: $10 / 10$. Valedictorian of graduating class.
+
+{\bf B.Sc.} in Computer Science \hfill {2006 -- 2014}  \\
 Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
 Department of Informatics \& Telecommunications \\
 Thesis: ''Declarative Points-to Analysis on Different Datalog Engines'' \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis.pdf}{ (link)} \\
-Advisor: Yannis Smaragdakis 
+Advisor: Yannis Smaragdakis
   (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}}) \\
-Grade: $8.51 / 10$. Salutatorian of graduating class. %--(\mytilde{}50 graduates).
+Grade: $8.51 / 10$. Salutatorian of graduating class.
 
 \end{rSection}
 
@@ -63,8 +94,21 @@ Grade: $8.51 / 10$. Salutatorian of graduating class. %--(\mytilde{}50 graduates
 \begin{rSection}{Experience}
 
 \begin{rSubsection}
+  {University of Athens}
+  {October 2014 -- October 2016}
+  {Software Engineer, PLAST}
+  {Athens, ATH, GR}
+\item Supervisor: Yannis Smaragdakis
+  (\href{mailto:smaragd@di.uoa.gr}{\nolinkurl{smaragd@di.uoa.gr}})
+  \itemsep +0.5pt % increase space between items
+\item Research in Static Program Analyses. Contributed to the development of
+  the group's static analyses tools.
+\end{rSubsection}
+
+
+\begin{rSubsection}
   {CERN}
-  {October 2012 -- September 2013}
+  {October 2012 -- October 2013}
   {Technical Student, PH-CMG-PS}
   {Geneva, GE, CH}
 \item Supervisor: Colin Bernet
@@ -77,7 +121,7 @@ Grade: $8.51 / 10$. Salutatorian of graduating class. %--(\mytilde{}50 graduates
   \begin{inparaenum}[(i)]
   \item Developed a web page for dataset comparisons using root histograms, \\
   \item Created C++ dynamic libraries for physics using GNU autotools, \\
-  \item Contributed to the migration of the group's software from CVS to Git.
+  \item Contributed πto the migration of the group's software from CVS to Git.
   \end{inparaenum}
 \end{rSubsection}
 
@@ -115,14 +159,14 @@ Grade: $8.51 / 10$. Salutatorian of graduating class. %--(\mytilde{}50 graduates
 \begin{rSubsection}{}{}{}{}
 
 {\bf Teaching Assistant} \hfill {2014 -- } \\
-    
+
 \item University of Athens - Dept. of Informatics \& Telecommunications \\
 \\
 \begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
-  Spring 2014  
+  Spring 2014
     & {\bf Systems Programming} \\
     & Instructor: Yannis Smaragdakis \\
-  Fall 2014 
+  Fall 2014
     & {\bf Operating Systems} \\
     & Instructor: Alex Delis
 \end{tabular}
@@ -149,7 +193,7 @@ Grade: $8.51 / 10$. Salutatorian of graduating class. %--(\mytilde{}50 graduates
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 
 Programming Languages
-   & C/C++, Java, Python, Bash,  Datalog \\
+   & C/C++, Java, Python, Bash,  Datalog (LogiQL, Souffle) \\
 
 Version Control Systems
    & CVS, Git, Mercurial \\
@@ -158,13 +202,13 @@ Editors and IDEs
    & Emacs, Eclipse, NetBeans, IntelliJ IDEA, CLion \\
 
 Build Automation
-   & GNU Make, Autotools \\
+   & GNU Make, CMake, Autotools \\
 
 UNIX Skills
    & Shell Scripting, Systems Programming, Command-line Utilities \\
 
 Databases and Tools
-   & SQL, MySQL, Oracle SQL, JDBC, DBDesigner, MySQL Workbench \\
+   & SQL, MySQL, Oracle SQL \\
 
 Compilers and Debuggers
    & GCC / G++, GDB, Valgrind \\
@@ -193,22 +237,20 @@ Other
 %   EXTRA-CURRICULAR ACTIVITIES SECTION
 %-------------------------------------------
 
-\begin{rSection}{Extra-Curricular Activities}
-  Reading, Music, Films, Cycling, Photography \\
-\end{rSection}
+%% \begin{rSection}{Extra-Curricular Activities}
+%%   Reading, Music, Films, Cycling, Photography \\
+%% \end{rSection}
 
 %---------------------------
 %   PUBLICATIONS SECTION
 %---------------------------
 
-% \begin{rSection}{Publications}
-%   \begin{rSubsection}{}{}{}{}
-%     \itemsep +0.5pt % increase space between items
-%   \item \fullcite{jphantom}
-%   \item \fullcite{setbased}
-%   \item \fullcite{introspective}
-%   \end{rSubsection}
-% \end{rSection}
+ \begin{rSection}{Publications}
+   \begin{rSubsection}{}{}{}{}
+     \itemsep +0.5pt % increase space between items
+   \item \fullcite{Antoniadis:2017}
+   \end{rSubsection}
+ \end{rSection}
 
 % \begin{rSection}{Grants and Awards}
 %   \begin{rSubsection}{}{}{}{}
