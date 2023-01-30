@@ -9,9 +9,11 @@
 \usepackage{paralist}
 \usepackage{multirow}
 \usepackage{marvosym}
+\usepackage{xcolor}
 
 % Modify document margins
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\definecolor{MyColor}{RGB}{135,135,135}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -41,9 +43,9 @@
 %   HEADER SECTION
 %-----------------------
 
-\name{Anastasios ``Tony'' Antoniadis}
+\name{Anastasios Antoniadis}
 \address{Paioniou 6, Kamatero, Athens, Attica, Greece
-  \hfill{\email{anantoni@di.uoa.gr}}
+  \hfill{\email{a.antoniadis1989@gmail.com}}
 }
 
 \address{
@@ -61,6 +63,9 @@
 %------------------------------
 
 \begin{rSection}{Education}
+  {\bf Website Owner} Copywriter, SEO, and Developer \hfill {2021 -- 2023 } \\
+  Cyvox OÜ, Estonia
+
   {\bf Doctor of Philosophy -- PhD,} Static Program Analysis \hfill {2016 -- present } \\
   Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
   Department of Informatics \& Telecommunications \\
@@ -88,6 +93,17 @@
 
 \begin{rSection}{Experience}
 
+  \begin{rSubsection}
+    {Cyvox OÜ}
+    {January 2021 -- Present}
+    {Copywriter, SEO, Developer, and Blog Manager}
+    {Tallinn, Haarju, GR}
+  \item Started my own blogging small and created https://borderpolar.com, a tech and gaming website that reached hundreds of thousands monthly visitors.
+  \item Managed all the website's functional aspects, including content creation (copywriting), search engine optimization (SEO), WordPress Development, and Performance Optimization.
+  \item Developed word searching and pattern mathching Javascript (Single-Page-App) tools that assisted visitors in word puzzles such as Wordle, Duordle, and Quordle. 
+  \footnotesize\textcolor{MyColor}{WordPress, PHP, Javascript.}
+  \end{rSubsection}
+
 \begin{rSubsection}
   {University of Athens}
   {October 2014 -- Present}
@@ -98,7 +114,8 @@
   parallelization of fact generation from Java bytecode and the development
   of a web application to view static analysis results on the source code of the program.
 \item Worked on porting the group's Java bytecode analysis framework to a new Datalog engine (LogicBlox to Soufflé).
-\item Worked on the scalability and completeness of points-to analysis of Java Enterprise applications. 
+\item Worked on the scalability and completeness of points-to analysis of Java Enterprise applications.
+\footnotesize\textcolor{MyColor}{Java, Groovy, Python, LogicBlox, Soufflé.}
 \end{rSubsection}
 
 \begin{rSubsection}
@@ -110,6 +127,7 @@
 \item Worked on enhancing the completeness of static analysis of Java Enterprise applications using heap snapshots.
 Experimented with different tools for capturing heap snapshots and stack traces and different modes of execution
 for the web applications e.g., testing and normal execution.
+\footnotesize\textcolor{MyColor}{Java, Groovy, Python, Soufflé.}
 \end{rSubsection}
 
 
@@ -128,6 +146,7 @@ for the web applications e.g., testing and normal execution.
   \item Created C++ dynamic libraries for physics using GNU autotools, \\
   \item Contributed to the migration of the group's software from CVS to Git.
   \end{inparaenum}
+  \footnotesize\textcolor{MyColor}{Python}
 \end{rSubsection}
 
 \end{rSection}
@@ -149,34 +168,34 @@ for the web applications e.g., testing and normal execution.
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 
 Programming Languages
-& C/C++, Java, Groovy, Python, Bash, Prolog, Datalog \\
+& C/C++, Java, Groovy, Python, Bash, Prolog, Javascript, Datalog \\
 
 Version Control Systems
-   & Git, Mercurial \\
+   & Git, Mercurial, CVS \\
 
 Editors and IDEs
-   & Emacs, vim, IntelliJ IDEA, CLion \\
+   & Emacs, vim, IntelliJ IDEA, CLion, Visual Studio Code, PyCharm \\
 
-% Build Automation
-%    & GNU Make, CMake, Autotools, Gradle, Ant, Maven \\
+Build Automation
+   & GNU Make, CMake, Autotools, Gradle, Ant, Maven \\
 
-% UNIX Skills
-%    & Shell Scripting, System Programming, Server Administration \\
+UNIX Skills
+   & Shell Scripting, System Programming, Server Administration \\
 
-% Databases and Tools
-%    & SQL, MySQL, Oracle SQL \\
+Databases and Tools
+   & SQL, MySQL, Oracle SQL \\
 
-% Compilers and Debuggers
-%    & GCC / G++, GDB, Valgrind \\
+Compilers and Debuggers
+   & GCC / G++, GDB, Valgrind \\
 
 Concurrent Programming
    & Pthreads, MPI, OpenMP, Cuda, Java (\texttt{java.util.concurrent.*}) \\
 
-% Operating Systems
-%    & Linux, BSD, Unix and Unix-like operating systems, Windows \\
+Operating Systems
+   & Linux, BSD, Unix and Unix-like operating systems, Windows \\
 
-%% Networking
-%%    & Google Protocol Buffers, Apache HTTP components \\
+Networking
+   & Google Protocol Buffers, Apache HTTP components \\
 
 Web Development
    & HTML, CSS, PHP, JSP, Javascript, Java Enterprise, Spring \\
@@ -189,6 +208,8 @@ Web Development
   \begin{rSubsection}{}{}{}{}
     \itemsep +0.5pt % increase space between items
   \item \fullcite{portingdoop2souffle}
+  \item \fullcite{jackee}
+  \item \fullcite{tensorflow}
   \end{rSubsection}
 \end{rSection}
 
