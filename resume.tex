@@ -13,7 +13,6 @@
 
 % Modify document margins
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
-\definecolor{MyColor}{RGB}{135,135,135}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -43,9 +42,9 @@
 %   HEADER SECTION
 %-----------------------
 
-\name{Anastasios Antoniadis}
+\name{Anastasios ``Tony'' Antoniadis}
 \address{Paioniou 6, Kamatero, Athens, Attica, Greece
-  \hfill{\email{a.antoniadis1989@gmail.com}}
+  \hfill{\email{anantoni@di.uoa.gr}}
 }
 
 \address{
@@ -59,35 +58,6 @@
 \newcommand{\indentitem}{\setlength\itemindent{25pt}}
 
 %------------------------------
-%     EDUCATION SECTION
-%------------------------------
-
-\begin{rSection}{Education}
-  {\bf Website Owner} Copywriter, SEO, and Developer \hfill {2021 -- 2023 } \\
-  Cyvox OÜ, Estonia
-
-  {\bf Doctor of Philosophy -- PhD,} Static Program Analysis \hfill {2016 -- present } \\
-  Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
-  Department of Informatics \& Telecommunications \\
-  Advisor: Prof.~Yannis Smaragdakis
-
-  {\bf Master of Science,} Computing Systems \hfill {2015 -- 2016 } \\
-  Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
-  Department of Informatics \& Telecommunications \\
-  Thesis: ''Combining source code metadata and static analysis results via a compiler plug-in'' \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis2.pdf}{ (link)} \\
-  Advisor: Prof.~Yannis Smaragdakis \\
-  Grade: $10 / 10$. Valedictorian of graduating class.
-
-  {\bf Bachelor of Science,}  Computer Science \hfill {2006 -- 2014}  \\
-  Ethnikon kai Kapodistriakon Panepistimion Athinon / University of Athens \\
-  Department of Informatics \& Telecommunications \\
-  Thesis: ''Declarative Points-to Analysis on Different Datalog Engines'' \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis.pdf}{ (link)} \\
-  Advisor: Assoc. Prof.~Yannis Smaragdakis \\
-  Grade: $8.51 / 10$. Salutatorian of graduating class.
-
-\end{rSection}
-
-%------------------------------
 %   WORK EXPERIENCE SECTION
 %------------------------------
 
@@ -97,11 +67,13 @@
     {Cyvox OÜ}
     {January 2021 -- Present}
     {Copywriter, SEO, Developer, and Blog Manager}
-    {Tallinn, Haarju, GR}
-  \item Started my own blogging small and created https://borderpolar.com, a tech and gaming website that reached hundreds of thousands monthly visitors.
-  \item Managed all the website's functional aspects, including content creation (copywriting), search engine optimization (SEO), WordPress Development, and Performance Optimization.
-  \item Developed word searching and pattern mathching Javascript (Single-Page-App) tools that assisted visitors in word puzzles such as Wordle, Duordle, and Quordle. 
-  \footnotesize\textcolor{MyColor}{WordPress, PHP, Javascript.}
+    {Tallinn, Haarju, EST}
+    \begin{itemize}
+      \item Started a blogging small business and created \href{http://borderpolar.com}{(BORDERPOLAR)}, a tech and gaming website that reached hundreds of thousands monthly visitors.
+      \item Managed all the website's functional aspects, including content creation (copywriting), search engine optimization (SEO), WordPress Development, and Performance Optimization.
+      \item Developed word searching and pattern mathching Javascript (Single-Page-App) tools that assisted visitors in word puzzles such as Wordle, Duordle, and Quordle.
+    \end{itemize}  
+  \footnotesize\textcolor{MyColor}{Technologies: WordPress, PHP, Javascript.}
   \end{rSubsection}
 
 \begin{rSubsection}
@@ -109,13 +81,12 @@
   {October 2014 -- Present}
   {Software Engineer, PLAST}
   {Athens, ATH, GR}
-\item Supervisor: Yannis Smaragdakis
-\item Contributed to the development of the group's static analyses tools, including the
-  parallelization of fact generation from Java bytecode and the development
-  of a web application to view static analysis results on the source code of the program.
-\item Worked on porting the group's Java bytecode analysis framework to a new Datalog engine (LogicBlox to Soufflé).
-\item Worked on the scalability and completeness of points-to analysis of Java Enterprise applications.
-\footnotesize\textcolor{MyColor}{Java, Groovy, Python, LogicBlox, Soufflé.}
+  \begin{itemize}
+    \item Contributed to the development of the group's static analyses tools, including the parallelization of fact generation from Java bytecode and the development of a web application to view static analysis results on the source code of the program.
+    \item Worked on porting the group's Java bytecode analysis framework to a new Datalog engine (LogicBlox to Soufflé).
+    \item Worked on the scalability and completeness of points-to analysis of Java Enterprise applications.
+  \end{itemize}  
+\footnotesize\textcolor{MyColor}{Technologies: Java, Groovy, Python, LogicBlox, Soufflé.}
 \end{rSubsection}
 
 \begin{rSubsection}
@@ -123,11 +94,10 @@
   {February 2019 -- July 2019}
   {Research Assistant}
   {Athens, ATH, GR}
-\item Supervisors: Paddy Krishnan, Raghavendra Ramesh and Nicholas Allen
-\item Worked on enhancing the completeness of static analysis of Java Enterprise applications using heap snapshots.
-Experimented with different tools for capturing heap snapshots and stack traces and different modes of execution
-for the web applications e.g., testing and normal execution.
-\footnotesize\textcolor{MyColor}{Java, Groovy, Python, Soufflé.}
+  \begin{itemize}
+    \item Worked on enhancing the completeness of static analysis of Java Enterprise applications using heap snapshots. Experimented with different tools for capturing heap snapshots and stack traces and different modes of execution for the web applications e.g., testing and normal execution.
+  \end{itemize}
+\footnotesize\textcolor{MyColor}{Technologies: Java, Groovy, Python, Soufflé.}
 \end{rSubsection}
 
 
@@ -136,124 +106,75 @@ for the web applications e.g., testing and normal execution.
   {October 2012 -- October 2013}
   {Technical Student, PH-CMG-PS}
   {Geneva, GE, CH}
-\item Supervisor: Colin Bernet
-  \item Contributed to the active development of a physics analysis framework,
-  in particular to the production of datasets and management of the
-  group's database.
-\item Other tasks: \\
-  \begin{inparaenum}[(i)]
-  \item Developed a web page for particle collision dataset comparisons using root histograms, \\
-  \item Created C++ dynamic libraries for physics using GNU autotools, \\
-  \item Contributed to the migration of the group's software from CVS to Git.
-  \end{inparaenum}
-  \footnotesize\textcolor{MyColor}{Python}
+  \begin{itemize}
+    \item Contributed to the active development of a physics analysis framework, in particular to the production of datasets and management of the group's database.
+    \item Developed a web page for particle collision dataset comparisons using root histograms,
+    \item Created C++ dynamic libraries for physics using GNU autotools,
+    \item Contributed to the migration of the group's software from CVS to Git.
+  \end{itemize}
+  \footnotesize\textcolor{MyColor}{Technologies: Python, Oracle SQL.}
 \end{rSubsection}
 
+  \begin{itemize}
+    \item Past Supervisors: Colin Bernet, Paddy Krishnan, Raghavendra Ramesh, and Nicholas Allen
+    \item Ph.D. Advisor: Yannis Smaragdakis
+  \end{itemize}
+
 \end{rSection}
 
-\begin{rSection}{Languages and Certificates}
-  Greek (native), English (fluent) \\
-  Certificate of Proficiency in English, University of Cambridge (UK)
-  \hfill 2004
-\end{rSection}
+%------------------------------
+%     EDUCATION SECTION
+%------------------------------
 
+\begin{rSection}{Education}
+  {\bf Doctor of Philosophy -- PhD,} Static Program Analysis \hfill {2016 -- present } \\
+  University of Athens,  Department of Informatics \& Telecommunications \\
+  Advisor: Prof.~Yannis Smaragdakis
+
+  {\bf Master of Science,} Computing Systems \hfill {2015 -- 2016 } \\
+  University of Athens,  Department of Informatics \& Telecommunications \\
+  Thesis: \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis2.pdf}{ (''Combining source code metadata and static analysis results via a compiler plug-in'')} \\
+  Advisor: Prof.~Yannis Smaragdakis \\
+  Grade: $10 / 10$. Valedictorian of graduating class.
+
+  {\bf Bachelor of Science,}  Computer Science \hfill {2006 -- 2014}  \\
+  University of Athens,  Department of Informatics \& Telecommunications \\
+  Thesis: \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis.pdf}{ (''Declarative Points-to Analysis on Different Datalog Engines'')} \\
+  Advisor: Assoc. Prof.~Yannis Smaragdakis \\
+  Grade: $8.51 / 10$. Salutatorian of graduating class.
+
+  {\bf Certificate of Proficiency in English,}, University of Cambridge (UK)
+\end{rSection}
 
 %----------------------------------
-%   TECHNICAL STRENGTHS SECTION
+%   PUBLICATIONS SECTION
 %----------------------------------
-
-\begin{rSection}{Technical Skills}
-
-{\renewcommand{\arraystretch}{1.3}
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-
-Programming Languages
-& C/C++, Java, Groovy, Python, Bash, Prolog, Javascript, Datalog \\
-
-Version Control Systems
-   & Git, Mercurial, CVS \\
-
-Editors and IDEs
-   & Emacs, vim, IntelliJ IDEA, CLion, Visual Studio Code, PyCharm \\
-
-Build Automation
-   & GNU Make, CMake, Autotools, Gradle, Ant, Maven \\
-
-UNIX Skills
-   & Shell Scripting, System Programming, Server Administration \\
-
-Databases and Tools
-   & SQL, MySQL, Oracle SQL \\
-
-Compilers and Debuggers
-   & GCC / G++, GDB, Valgrind \\
-
-Concurrent Programming
-   & Pthreads, MPI, OpenMP, Cuda, Java (\texttt{java.util.concurrent.*}) \\
-
-Operating Systems
-   & Linux, BSD, Unix and Unix-like operating systems, Windows \\
-
-Networking
-   & Google Protocol Buffers, Apache HTTP components \\
-
-Web Development
-   & HTML, CSS, PHP, JSP, Javascript, Java Enterprise, Spring \\
-
-\end{tabular}}
-\end{rSection}
-
-
 \begin{rSection}{Publications}
   \begin{rSubsection}{}{}{}{}
-    \itemsep +0.5pt % increase space between items
-  \item \fullcite{portingdoop2souffle}
-  \item \fullcite{jackee}
-  \item \fullcite{tensorflow}
+    \begin{itemize} %\itemsep +0.5pt % increase space between items
+      \item \fullcite{portingdoop2souffle}
+      \item \fullcite{jackee}
+      \item \fullcite{tensorflow}
+    \end{itemize}
   \end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Activities}
 \begin{rSubsection}{University of Athens}{Spring 2014 -- present}{Teaching Assistant}{}
 
-\begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
-  Spring 2014
-    & {\bf Systems Programming} \\
-    & {\bf Compilers} \\
-  & Instructor: Yannis Smaragdakis \\
-
-  Fall 2014
-    & {\bf Operating Systems} \\
-    & Instructor: Alex Delis \\
-
-  Spring 2015
-    & {\bf Compilers} \\
-    & Instructor: Yannis Smaragdakis \\
-
-  Spring 2016
-    & {\bf Compilers} \\
-  & Instructor: Yannis Smaragdakis \\
-
-  Fall 2017
-    & {\bf Compilers} \\
-    & Instructor: Yannis Smaragdakis \\
-
-  Fall 2019  
-    & {\bf OO Languages and Systems/Advanced Programming Techniques} \\
-    & Instructor: Yannis Smaragdakis \\
-\end{tabular}
+% \begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
+\begin{itemize}
+  \item {\bf Systems Programming}  Spring 2014
+  \item {\bf Operating Systems}  Fall 2014
+  \item {\bf Compilers } Spring 2014, Spring 2015, Spring 2016, Fall 2017
+  \item {\bf OO Languages and Systems/Advanced Programming Techniques} Fall 2019, Fall 2020
+  \item {\bf Instructors}: Alex Delis, Yannis Smaragdakis
+\end{itemize}
+%\end{tabular}
 
 \end{rSubsection}
-\end{rSection}
-
-\begin{rSection}{Grants and Awards}
-  \begin{rSubsection}{}{}{}{}
-  \item Oracle scholarship for SOAP 2017.
-  \end{rSubsection}
-\end{rSection}
-
-\begin{rSection}{Hobbies \& Interests}
-  reading, films, music, dog training, soccer, basketball \\
+{\bf Grants and Awards}: Oracle scholarship for SOAP 2017. \\
+{\bf Hobbies \& Interests}: Photography, Films, NFL.
 \end{rSection}
 
 \end{document}
