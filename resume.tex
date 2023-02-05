@@ -5,9 +5,10 @@
 \documentclass{resume}
 
 \usepackage{bookmark}
-\usepackage{graphicx}
 \usepackage{paralist}
 \usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{graphicx}
 \usepackage{marvosym}
 \usepackage{xcolor}
 
@@ -59,18 +60,30 @@
 %------------------------------
 %   WORK EXPERIENCE SECTION
 %------------------------------
+
+\begin{rSection}{Technical Skills}
+    \begin{itemize}[label={-}]
+      \setlength\itemsep{-0.5em}
+        \item Languages: Java, Python, C++, C, Groovy, PHP, Javascript, Datalog, Scheme
+        \item Frameworks \& Libraries: Spring, Protobuff, jQuery, Bootstrap, JSP \& Java Servlets
+        \item Databases: Oracle SQL, MySQL, Elasticsearch
+        \item Build Tools: Make, Gradle, Maven, Ant
+    \end{itemize}
+\end{rSection}
+
 \begin{rSection}{Experience}
   \begin{rSubsection}
     {Cyvox OÜ}
     {January 2021 -- January 2023}
     {Copywriter, SEO, Developer, and Blog Manager}
     {Tallinn, Haarju, EST}
-    % \begin{itemize}
-    \item[-] Started a blogging small business and created \href{http://borderpolar.com}{BORDERPOLAR}, a tech and gaming website that reached hundreds of thousands monthly visitors.
-    \item[-] Managed all the website's functional aspects, including content creation (copywriting), search engine optimization (SEO), WordPress Development, and Performance Optimization.
-    \item[-] Developed word searching and pattern mathching Javascript (Single-Page-App) tools that assisted visitors in word puzzles such as Wordle, Duordle, and Quordle.
-    \\
-  \footnotesize\textcolor{TechsColor}{Technologies: WordPress, PHP, Javascript.}\\
+    \begin{itemize}[label={-}]
+      \setlength\itemsep{-0.5em}
+        \item Started a blogging small business and created \href{http://borderpolar.com}{BORDERPOLAR}, a tech and gaming website that reached hundreds of thousands monthly visitors.
+        \item Managed all the website's functional aspects, including content creation (copywriting), SEO, WordPress Development, and Performance Optimization.
+        \item Developed word searching and pattern mathching Javascript (Single-Page-App) tools that assisted visitors in word puzzles such as Wordle, Duordle, and Quordle.
+    \end{itemize}
+  \footnotesize\textcolor{TechsColor}{\textit{Technologies:}: WordPress, PHP, Javascript.}\\
   \end{rSubsection}
 
 \begin{rSubsection}
@@ -78,11 +91,13 @@
   {October 2014 -- December 2020}
   {Software Engineer \& Research Assistant, PLAST}
   {Athens, ATH, GR}
-    \item[-] Contributed to the development of static analyses tools, including the parallelization of data extraction from Java bytecode and the development of a web application to view static analysis results on the source code of the program.
-    \item[-] Worked on porting the group's Java bytecode analysis framework to a new Datalog engine (LogicBlox to Soufflé).
-    \item[-] Explored ways to improve the scalability and completeness of points-to analysis of Java Enterprise applications e.g., by modifying data structures inside the JDK.
-    \\
-\footnotesize\textcolor{TechsColor}{Technologies: Java, Groovy, Python, LogicBlox, Soufflé.}\\
+  \begin{itemize}[label={-}]
+    \setlength\itemsep{-0.5em}
+    \item Contributed to the development of static analyses tools, including the parallelization of data extraction from Java bytecode and the development of a web application to view static analysis results on the source code of the program.
+    \item Worked on porting the group's Java bytecode analysis framework to a new Datalog engine (LogicBlox to Soufflé).
+    \item Explored ways to improve the scalability and completeness of points-to analysis of Java Enterprise applications e.g., by modifying data structures inside the JDK.
+  \end{itemize}
+\footnotesize\textcolor{TechsColor}{\textit{Technologies:} Java, Groovy, Python, LogicBlox, Soufflé.}\\
 \end{rSubsection}
 
 \begin{rSubsection}
@@ -90,32 +105,35 @@
   {February 2019 -- July 2019}
   {Research Assistant}
   {Athens, ATH, GR}
-    \item[-] Worked on enhancing the completeness of static analysis of Java Enterprise applications using heap snapshots. Experimented with different tools for capturing heap snapshots and stack traces and different modes of execution for the web applications e.g., testing and normal execution.
-    \\
-\footnotesize\textcolor{TechsColor}{Technologies: Java, Groovy, Python, Soufflé.}\\
+  \begin{itemize}[label={-}]
+    \setlength\itemsep{-0.5em}
+    \item Worked on enhancing the completeness of static analysis of Java Enterprise applications using heap snapshots. Experimented with different tools for capturing heap snapshots and stack traces and different modes of execution for the web applications e.g., testing and normal execution.
+  \end{itemize}
+\footnotesize\textcolor{TechsColor}{\textit{Technologies:} Java, Groovy, Python, Soufflé.}\\
 \end{rSubsection}
-
 
 \begin{rSubsection}
   {CERN}
   {October 2012 -- October 2013}
   {Technical Student, PH-CMG-PS}
   {Geneva, GE, CH}
-    \item[-] Contributed to the active development of a physics analysis framework, in particular to the production of datasets and management of the group's database.
-    \item[-] Developed a web page for particle collision dataset comparisons using root histograms,
-    \item[-] Created C++ dynamic libraries for physics using GNU autotools,
-    \item[-] Contributed to the migration of the group's software from CVS to Git.
-    \\
-  \footnotesize\textcolor{TechsColor}{Technologies: Python, Oracle SQL.}\\
+
+  \begin{itemize}[label={-}]
+    \setlength\itemsep{-0.5em}
+    \item Contributed to the active development of a physics analysis framework, in particular to the production of datasets and management of the group's database.
+    \item Developed a web page for particle collision dataset comparisons using root histograms.
+    \item Created C++ dynamic libraries for physics using GNU autotools.
+    \item Contributed to the migration of the group's software from CVS to Git.
+  \end{itemize}
+  \footnotesize\textcolor{TechsColor}{\textit{Technologies:} Python, Oracle SQL, GNU Autotools, HTML, CSS, PHP.}\\
 \end{rSubsection}
   Past Supervisors: Colin Bernet, Paddy Krishnan, Raghavendra Ramesh, and Nicholas Allen \\
-  Ph.D. Advisor: Yannis Smaragdakis
+  % Ph.D. Advisor: Yannis Smaragdakis
 \end{rSection}
 
 %------------------------------
 %     EDUCATION SECTION
 %------------------------------
-\newpage
 \begin{rSection}{Education}
   {\bf Doctor of Philosophy -- PhD,} Static Program Analysis \hfill {2016 -- On Hold } \\
   University of Athens,  Department of Informatics \& Telecommunications \\
@@ -124,16 +142,16 @@
   {\bf Master of Science,} Computing Systems \hfill {2015 -- 2016 } \\
   University of Athens,  Department of Informatics \& Telecommunications \\
   Thesis: \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis2.pdf}{ (''Combining source code metadata and static analysis results via a compiler plug-in'')} \\
-  Advisor: Prof.~Yannis Smaragdakis \\
   Grade: $10 / 10$. Valedictorian of graduating class.
 
   {\bf Bachelor of Science,}  Computer Science \hfill {2006 -- 2014}  \\
   University of Athens,  Department of Informatics \& Telecommunications \\
   Thesis: \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis.pdf}{ (''Declarative Points-to Analysis on Different Datalog Engines'')} \\
-  Advisor: Assoc. Prof.~Yannis Smaragdakis \\
   Grade: $8.51 / 10$. Salutatorian of graduating class.
+\end{rSection}
 
-  {\bf Certificate of Proficiency in English}, University of Cambridge (UK)
+\begin{rSection}{Languages}
+  \textit{Greek} (native), \textit{English} (fluent).\\
 \end{rSection}
 
 %----------------------------------
@@ -141,28 +159,29 @@
 %----------------------------------
 \begin{rSection}{Publications}
   \begin{rSubsection}{}{}{}{}
-    % \item[-]sep +0.5pt % increase space between items
-      \item[-] \fullcite{portingdoop2souffle}
-      \item[-] \fullcite{jackee}
-      \item[-] \fullcite{tensorflow}
+    % \itemsep +0.5pt % increase space between items
+    \begin{itemize}[label={-}]
+      \setlength\itemsep{-0.5em}
+        \item \fullcite{portingdoop2souffle}
+        \item \fullcite{jackee}
+        \item \fullcite{tensorflow}
+    \end{itemize}
   \end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Activities}
-\begin{rSubsection}{University of Athens}{Spring 2014 -- Fall 2020}{Teaching Assistant}{}
+  \begin{rSubsection}{University of Athens}{Spring 2014 -- Fall 2020}{Teaching Assistant}{}
+    \begin{itemize}[label={-}]
+      \setlength\itemsep{-0.5em}
+    % \begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
+        \item {\bf Courses:}  Operating Systems, System Programming, Compilers, Systems/Advanced Programming Techniques.
+        \item {\bf Instructors:} Alex Delis, Yannis Smaragdakis
+      \end{itemize}
+    %\end{tabular}
 
-  % \begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
-    \item[-] {\bf Systems Programming}  Spring 2014
-    \item[-] {\bf Operating Systems}  Fall 2014
-    \item[-] {\bf Compilers} Spring 2014, Spring 2015, Spring 2016, Fall 2017
-    \item[-] {\bf OO Languages and Systems/Advanced Programming Techniques} Fall 2019, Fall 2020
-    \\
-  {\bf Instructors}: Alex Delis, Yannis Smaragdakis
-  %\end{tabular}
-
-  {\bf Grants and Awards}: Oracle scholarship for SOAP 2017. \\
-  {\bf Hobbies \& Interests}: Photography, Films, NFL.
-\end{rSubsection}
+    {\bf Grants and Awards:} Oracle scholarship for SOAP 2017. \\
+    {\bf Hobbies \& Interests:} Photography, Films, NFL.
+  \end{rSubsection}
 \end{rSection}
 
 \end{document}
