@@ -1,32 +1,76 @@
-@inproceedings{portingdoop2souffle,
-  author    = {Antoniadis, Tony and Triantafyllou, Konstantinos and Smaragdakis, Yannis},
-  title     = {Porting Doop to Souffle: A Tale of Inter-engine Portability for Datalog-based Analyses},
-  crossref  = {soap:2017},
-  keywords  = {Datalog, Doop, Points-to analysis},
-}               
+@inproceedings{10.1145/3088515.3088522,
+author = {Antoniadis, Tony and Triantafyllou, Konstantinos and Smaragdakis, Yannis},
+title = {Porting doop to Souffl\'{e}: a tale of inter-engine portability for Datalog-based analyses},
+year = {2017},
+isbn = {9781450350723},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3088515.3088522},
+doi = {10.1145/3088515.3088522},
+abstract = {We detail our experience of porting the static analysis framework to the recently introduced Datalog engine. The port addresses the idiosynchrasies of the Datalog dialects involved (w.r.t. the type system, value construction, and fact updates) and differences in the runtime systems (w.r.t. parallelism, transactional execution, and optimization methodologies). The overall porting effort is interesting in many ways: as an instance of the benefits of specifying static analyses declaratively, gaining benefits (e.g., parallelism) from a mere porting to a new runtime system; as a study of the effort required to migrate a substantial Datalog codebase (of several thousand rules) to a different dialect. By exploiting shared-memory parallelism, the version of the framework achieves speedups of up to 4x, over already high single-threaded performance.},
+booktitle = {Proceedings of the 6th ACM SIGPLAN International Workshop on State Of the Art in Program Analysis},
+pages = {25–30},
+numpages = {6},
+keywords = {Datalog, Doop, Points-to analysis},
+location = {Barcelona, Spain},
+series = {SOAP 2017}
+}            
 
-@inproceedings{jackee,
-    author = {Antoniadis, Anastasios and Filippakis, Nikos and Krishnan, Paddy and Ramesh, Raghavendra and Allen, Nicholas and Smaragdakis, Yannis},
-    title = {Static Analysis of Java Enterprise Applications: Frameworks and Caches, the Elephants in the Room},
-    year = {2020},
-    crossref = {pldi:2020},
-    location = {London, UK},
-    series = {PLDI 2020}
+@inproceedings{10.1145/3385412.3386026,
+author = {Antoniadis, Anastasios and Filippakis, Nikos and Krishnan, Paddy and Ramesh, Raghavendra and Allen, Nicholas and Smaragdakis, Yannis},
+title = {Static analysis of Java enterprise applications: frameworks and caches, the elephants in the room},
+year = {2020},
+isbn = {9781450376136},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3385412.3386026},
+doi = {10.1145/3385412.3386026},
+abstract = {Enterprise applications are a major success domain of Java, and Java is the default setting for much modern static analysis research. It would stand to reason that high-quality static analysis of Java enterprise applications would be commonplace, but this is far from true. Major analysis frameworks feature virtually no support for enterprise applications and offer analyses that are woefully incomplete and vastly imprecise, when at all scalable.  In this work, we present two techniques for drastically enhancing the completeness and precision of static analysis for Java enterprise applications. The first technique identifies domain-specific concepts underlying all enterprise application frameworks, captures them in an extensible, declarative form, and achieves modeling of components and entry points in a largely framework-independent way. The second technique offers precision and scalability via a sound-modulo-analysis modeling of standard data structures.  In realistic enterprise applications (an order of magnitude larger than prior benchmarks in the literature) our techniques achieve high degrees of completeness (on average more than 4x higher than conventional techniques) and speedups of about 6x compared to the most precise conventional analysis, with higher precision on multiple metrics. The result is JackEE, an enterprise analysis framework that can offer precise, high-completeness static modeling of realistic enterprise applications.},
+booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {794–807},
+numpages = {14},
+keywords = {Java EE, points-to analysis, static analysis},
+location = {London, UK},
+series = {PLDI 2020}
 }
 
-@inproceedings{tensorflow,
-  author    = {Sifis Lagouvardos and
-               Julian Dolby and
-               Neville Grech and
-               Anastasios Antoniadis and
-               Yannis Smaragdakis},
-  title     = {Static Analysis of Shape in TensorFlow Programs},
-  booktitle = {34th European Conference on Object-Oriented Programming, {ECOOP} 2020,
-               November 15-17, 2020, Berlin, Germany (Virtual Conference)},
-  year      = {2020},
-  crossref = {ecoop:2020},
+@InProceedings{lagouvardos_et_al:LIPIcs.ECOOP.2020.15,
+  author =	{Lagouvardos, Sifis and Dolby, Julian and Grech, Neville and Antoniadis, Anastasios and Smaragdakis, Yannis},
+  title =	{{Static Analysis of Shape in TensorFlow Programs}},
+  booktitle =	{34th European Conference on Object-Oriented Programming (ECOOP 2020)},
+  pages =	{15:1--15:29},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-154-2},
+  ISSN =	{1868-8969},
+  year =	{2020},
+  volume =	{166},
+  editor =	{Hirschfeld, Robert and Pape, Tobias},
+  publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2020.15},
+  URN =		{urn:nbn:de:0030-drops-131726},
+  doi =		{10.4230/LIPIcs.ECOOP.2020.15},
+  annote =	{Keywords: Python, TensorFlow, static analysis, Doop, Wala}
 }
 
+@article{10.1145/3763129,
+author = {Antoniadis, Anastasios and Tsatiris, Ilias and Grech, Neville and Smaragdakis, Yannis},
+title = {Universal Scalability in Declarative Program Analysis (with Choice-Based Combination Pruning)},
+year = {2025},
+issue_date = {October 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {9},
+number = {OOPSLA2},
+url = {https://doi.org/10.1145/3763129},
+doi = {10.1145/3763129},
+abstract = {Datalog engines for fixpoint evaluation have brought great benefits to static program analysis over the past decades. A Datalog specification of an analysis allows a declarative, easy-to-maintain specification, without sacrificing performance, and indeed often achieving significant speedups compared to hand-coded algorithms. However, these benefits come with a certain loss of control. Datalog evaluation is bottom-up, meaning that all inferences (from a set of initial facts) are performed and all their conclusions are outputs of the computation. In practice, virtually every program analysis expressed in Datalog becomes unscalable for some inputs, due to the worst-case blowup of computing all results, even when a partial answer would have been perfectly satisfactory. In this work, we present a simple, uniform, and elegant solution to the problem, with great practical effectiveness and application to virtually any Datalog-based analysis. The approach consists of leveraging the choice construct, supported natively in modern Datalog engines like Souffle. The choice construct allows the definition of functional dependencies in a relation and has been used in the past for expressing worklist algorithms. We show a near-universal construction that allows the choice construct to flexibly limit evaluation of predicates. The technique is applicable to practically any analysis architecture imaginable, since it adaptively prunes evaluation results when a (programmer-controlled) projection of a relation exceeds a desired cardinality. We apply the technique to probably the largest, pre-existing Datalog analysis frameworks in existence: Doop (for Java bytecode) and the main client analyses from the Gigahorse framework (for Ethereum smart contracts). Without needing to understand the existing analysis logic and with minimal, local-only changes, the performance of each framework increases dramatically, by over 20x for the hardest inputs, with near-negligible sacrifice in completeness.},
+journal = {Proc. ACM Program. Lang.},
+month = oct,
+articleno = {351},
+numpages = {28},
+keywords = {Static analysis, datalog, logic programming, optimization, program analysis}
+}
 
 
 
