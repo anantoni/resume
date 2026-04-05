@@ -9,17 +9,16 @@
 \usepackage{multirow}
 \usepackage{enumitem}
 \usepackage{graphicx}
-\usepackage{marvosym}
-\usepackage{xcolor}
+\usepackage{fontawesome5}
 
 % Modify document margins
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
-\definecolor{TechsColor}{RGB}{135,135,135}
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry}
+\definecolor{TechsColor}{RGB}{110,110,110}
 
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
-  urlcolor=blue
+  urlcolor={accent}
 }
 
 \usepackage[backend=bibtex]{biblatex}
@@ -27,30 +26,28 @@
 \addbibresource{bib/proceedings.bib}
 
 % Logo Commands
-\newcommand\githublogo{\raisebox{-1pt}{\includegraphics[height=9pt]{logos/github.pdf}}\ }
-\newcommand\linkedinlogo{\raisebox{-1pt}{\includegraphics[height=9pt]{logos/linkedin.pdf}}\ }
-\newcommand\emaillogo{\raisebox{-1pt}{\Letter}\ }
-\newcommand\homephonelogo{\raisebox{-1pt}{\Telefon}\ }
-\newcommand\cellphonelogo{\raisebox{-1pt}{\Mobilefone}\ }
-\newcommand*{\github}[1]{\githublogo\href{https://#1}{#1}}
-\newcommand*{\linkedin}[1]{\linkedinlogo\href{https://#1}{#1}}
-\newcommand*{\email}[1]{\emaillogo\href{mailto:#1}{\nolinkurl{#1}}}
-\newcommand*{\homephone}[1]{\homephonelogo{#1}}
-\newcommand*{\cellphone}[1]{\cellphonelogo{#1}}
+\newcommand*{\email}[1]{\faEnvelope\hspace{0.3em}\href{mailto:#1}{\nolinkurl{#1}}}
+\newcommand*{\homephone}[1]{\faPhone\hspace{0.3em}{#1}}
+\newcommand*{\cellphone}[1]{\faMobile*\hspace{0.3em}{#1}}
+\newcommand*{\github}[1]{\faGithub\hspace{0.3em}\href{https://#1}{#1}}
+\newcommand*{\linkedin}[1]{\faLinkedin\hspace{0.3em}\href{https://#1}{#1}}
 
 %-----------------------
 %   HEADER SECTION
 %-----------------------
 
 \name{Anastasios Antoniadis}
-\address{Paioniou 6, Kamatero, Athens, Attica, Greece
-  \hfill{\email{a.antoniadis1989@gmail.com}}
+\address{
+  \email{a.antoniadis1989@gmail.com}
+  \hspace{0.4cm}
+  \github{github.com/anantoni}
 }
 
 \address{
-  \homephone{+30 210 2318223} \hspace{0.2cm}
+  \homephone{+30 210 2318223} \hspace{0.4cm}
   \cellphone{+30 694 203 3025}
-  \hfill{\github{github.com/anantoni}}
+  \hspace{0.4cm}
+  \faMapMarker*\hspace{0.3em}Athens, Greece
 }
 
 \begin{document}
@@ -58,40 +55,44 @@
 \newcommand{\indentitem}{\setlength\itemindent{25pt}}
 
 %------------------------------
-%   WORK EXPERIENCE SECTION
+%   TECHNICAL SKILLS SECTION
 %------------------------------
 
 \begin{rSection}{Technical Skills}
-    \begin{itemize}[label={-}]
-      \setlength\itemsep{-0.5em}
-        \item Languages: Java, Python, C++, C, Groovy, PHP, Javascript, Datalog, Scheme
-        \item Frameworks \& Libraries: Spring, Protobuff, jQuery, Bootstrap, JSP \& Java Servlets
-        \item Databases: Oracle SQL, MySQL, Elasticsearch
-        \item Build Tools: Make, Gradle, Maven, Ant
-    \end{itemize}
+  \vspace{0.3em}
+  \begin{tabular}{@{} >{\bfseries}l @{\hspace{1.5em}} l }
+    Languages        & Java, Python, C++, C, Groovy, PHP, Javascript, Datalog, Scheme \\
+    Frameworks       & Spring, Protobuff, jQuery, Bootstrap, JSP \& Java Servlets \\
+    Databases        & Oracle SQL, MySQL, Elasticsearch \\
+    Build Tools      & Make, Gradle, Maven, Ant \\
+  \end{tabular}
 \end{rSection}
+
+%------------------------------
+%   WORK EXPERIENCE SECTION
+%------------------------------
 
 \begin{rSection}{Experience}
   \begin{rSubsection}
     {University of Athens}
-    {October 2014 -- December 2020, May 2024 -- Present}
+    {Oct 2014 -- Dec 2020, May 2024 -- Present}
     {Software Engineer \& Research Assistant, PLAST}
-    {Athens, ATH, GR}
-    \begin{itemize}[label={-}]
-      \setlength\itemsep{-0.5em}
+    {Athens, Greece}
+    \begin{itemize}[label={\color{accent}\textbullet}, leftmargin=1.5em, topsep=2pt]
+      \setlength\itemsep{-0.2em}
       \item Contributed to the development of static analyses tools, including: the parallelization of data extraction from Java bytecode, a web application to view static analysis results on the source code of the program, and the porting of group's Java bytecode analysis framework to a new Datalog engine.
       \item Explored ways to improve the scalability and completeness of points-to analysis of Java Enterprise applications e.g., by modeling data structures inside the JDK and web frameworks (Spring, Hibernate, etc.).
     \end{itemize}
-    \footnotesize\textcolor{TechsColor}{\textit{Technologies:} Java, Groovy, Python, LogicBlox, Soufflé, Git.}
+    \footnotesize\textcolor{TechsColor}{\textit{Technologies:} Java, Groovy, Python, LogicBlox, Souffl\'e, Git.}
   \end{rSubsection}
 
   \begin{rSubsection}
     {Satways Ltd}
-    {March 2023 -- October 2023}
+    {Mar 2023 -- Oct 2023}
     {Software Engineer}
-    {Athens, ATH, GR}
-    \begin{itemize}[label={-}]
-      \setlength\itemsep{-0.5em}
+    {Athens, Greece}
+    \begin{itemize}[label={\color{accent}\textbullet}, leftmargin=1.5em, topsep=2pt]
+      \setlength\itemsep{-0.2em}
         \item Worked on the introduction of data from underwater optic fibers into the company's desktop application, ENGAGE, built on Eclipse RCP.
         \item Explored the use of the Elastic stack for logging (ELK + Filebeat) and the use of elasticsearch for big data storage.
     \end{itemize}
@@ -99,52 +100,49 @@
   \end{rSubsection}
 
   \begin{rSubsection}
-    {Cyvox OÜ}
-    {January 2021 -- January 2023}
+    {Cyvox O\"U}
+    {Jan 2021 -- Jan 2023}
     {Copywriter, SEO, Developer, and Blog Manager}
-    {Tallinn, Haarju, EST}
-    \begin{itemize}[label={-}]
-      \setlength\itemsep{-0.5em}
+    {Tallinn, Estonia}
+    \begin{itemize}[label={\color{accent}\textbullet}, leftmargin=1.5em, topsep=2pt]
+      \setlength\itemsep{-0.2em}
         \item Started a blogging small business and created \href{http://borderpolar.com}{BORDERPOLAR}, a tech and gaming website that reached hundreds of thousands monthly visitors.
         \item Managed all the website's functional aspects, including content creation (copywriting), SEO, WordPress Development, and Performance Optimization.
-        \item Developed word searching and pattern mathching Javascript (SPA) tools for puzzles like Wordle.
+        \item Developed word searching and pattern matching Javascript (SPA) tools for puzzles like Wordle.
     \end{itemize}
     \footnotesize\textcolor{TechsColor}{\textit{Technologies:} WordPress, PHP, Javascript.}
   \end{rSubsection}
 
-\begin{rSubsection}
-  {Oracle Labs Australia}
-  {February 2019 -- July 2019}
-  {Research Intern}
-  {Brisbane, QLD, AU}
-  \begin{itemize}[label={-}]
-    \setlength\itemsep{-0.5em}
-    \item Worked on enhancing the completeness of static analysis of Java Enterprise applications using heap snapshots. Experimented with tools for capturing heap snapshots and stack traces and different modes of execution for web apps and frameworks.
-  \end{itemize}
-\footnotesize\textcolor{TechsColor}{\textit{Technologies:} Java, Groovy, Python, Soufflé, Git.}
-\end{rSubsection}
+  \begin{rSubsection}
+    {Oracle Labs Australia}
+    {Feb 2019 -- Jul 2019}
+    {Research Intern}
+    {Brisbane, Australia}
+    \begin{itemize}[label={\color{accent}\textbullet}, leftmargin=1.5em, topsep=2pt]
+      \setlength\itemsep{-0.2em}
+      \item Worked on enhancing the completeness of static analysis of Java Enterprise applications using heap snapshots. Experimented with tools for capturing heap snapshots and stack traces and different modes of execution for web apps and frameworks.
+    \end{itemize}
+    \footnotesize\textcolor{TechsColor}{\textit{Technologies:} Java, Groovy, Python, Souffl\'e, Git.}
+  \end{rSubsection}
 
-\begin{rSubsection}
-  {CERN}
-  {October 2012 -- October 2013}
-  {Technical Student, PH-CMG-PS}
-  {Geneva, GE, CH}
-
-  \begin{itemize}[label={-}]
-    \setlength\itemsep{-0.5em}
-    \item Contributed to the active development of a physics analysis framework, in particular to the production of datasets and management of the group's database.
-    \item Developed a web page for particle collision histogram comparisons, contributed to the creation of C++ libraries for physics using GNU Autotools and the group's migration from CVS to Git.
-  \end{itemize}
-  \footnotesize\textcolor{TechsColor}{\textit{Technologies:} Python, Oracle SQL, GNU Autotools, HTML, CSS, PHP, CVS, Git.}
-\end{rSubsection}
-  % Past Supervisors: Colin Bernet, Paddy Krishnan, Raghavendra Ramesh, and Nicholas Allen \\
-  % Ph.D. Advisor: Yannis Smaragdakis
+  \begin{rSubsection}
+    {CERN}
+    {Oct 2012 -- Oct 2013}
+    {Technical Student, PH-CMG-PS}
+    {Geneva, Switzerland}
+    \begin{itemize}[label={\color{accent}\textbullet}, leftmargin=1.5em, topsep=2pt]
+      \setlength\itemsep{-0.2em}
+      \item Contributed to the active development of a physics analysis framework, in particular to the production of datasets and management of the group's database.
+      \item Developed a web page for particle collision histogram comparisons, contributed to the creation of C++ libraries for physics using GNU Autotools and the group's migration from CVS to Git.
+    \end{itemize}
+    \footnotesize\textcolor{TechsColor}{\textit{Technologies:} Python, Oracle SQL, GNU Autotools, HTML, CSS, PHP, CVS, Git.}
+  \end{rSubsection}
 \end{rSection}
 
 %------------------------------
 %     EDUCATION SECTION
 %------------------------------
-\newpage
+
 \begin{rSection}{Education}
   {\bf Doctor of Philosophy -- PhD,} Static Program Analysis \hfill {2016 -- On Hold } \\
   University of Athens,  Department of Informatics \& Telecommunications \\
@@ -152,12 +150,12 @@
 
   {\bf Master of Science,} Computing Systems \hfill {2015 -- 2016 } \\
   University of Athens,  Department of Informatics \& Telecommunications \\
-  Thesis: \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis2.pdf}{ (''Combining source code metadata and static analysis results via a compiler plug-in'')} \\
+  Thesis: \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis2.pdf}{``Combining source code metadata and static analysis results via a compiler plug-in''} \\
   Grade: $10 / 10$. Valedictorian of graduating class.
 
   {\bf Bachelor of Science,}  Computer Science \hfill {2006 -- 2014}  \\
   University of Athens,  Department of Informatics \& Telecommunications \\
-  Thesis: \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis.pdf}{ (''Declarative Points-to Analysis on Different Datalog Engines'')} \\
+  Thesis: \href{http://cgi.di.uoa.gr/~smaragd/theses/antoniadis.pdf}{``Declarative Points-to Analysis on Different Datalog Engines''} \\
   Grade: $8.51 / 10$. Salutatorian of graduating class.
 \end{rSection}
 
@@ -169,8 +167,6 @@
 %   PUBLICATIONS SECTION
 %----------------------------------
 \begin{rSection}{Publications}
-  % \begin{rSubsection}{}{}{}{}
-    % \itemsep +0.5pt % increase space between items
     \begin{itemize}[label={}, leftmargin=*, topsep=0.1pt]
       \setlength\itemsep{+0.5em}
         \item \fullcite{10.1145/3763129}
@@ -178,21 +174,17 @@
         \item \fullcite{lagouvardos_et_al:LIPIcs.ECOOP.2020.15}
         \item \fullcite{10.1145/3088515.3088522}
     \end{itemize}
-  % \end{rSubsection}
 \end{rSection}
 
 \begin{rSection}{Activities}
   \begin{rSubsection}{University of Athens}{Spring 2014 -- Fall 2020}{Teaching Assistant}{}
-    \begin{itemize}[label={-}]
-      \setlength\itemsep{-0.5em}
-    % \begin{tabular}{@{} > {}l @{\hspace{6ex}} l }
+    \begin{itemize}[label={\color{accent}\textbullet}, leftmargin=1.5em, topsep=2pt]
+      \setlength\itemsep{-0.2em}
         \item {\bf Courses:}  Operating Systems, System Programming, Compilers, Systems/Advanced Programming Techniques.
         \item {\bf Instructors:} Alex Delis, Yannis Smaragdakis
       \end{itemize}
-    %\end{tabular}
     \end{rSubsection}
 \end{rSection}
-
 
 \begin{rSection}{Army Duties}
 Fulfilled army duties.
@@ -201,7 +193,6 @@ Fulfilled army duties.
 \begin{rSection}{Grants and Awards}
   Oracle scholarship for SOAP 2017.
 \end{rSection}
-
 
 \begin{rSection}{Hobbies \& Interests}
   Photography, Reading, Films, TV Shows, NFL.
